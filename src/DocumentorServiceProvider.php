@@ -9,7 +9,7 @@ class DocumentorServiceProvider extends ServiceProvider
     public function register()
     {
         $this->mergeConfigFrom(
-            __DIR__ . '/../config/config.php',
+            __DIR__ . '/config/config.php',
             'documentor'
         );
     }
@@ -18,7 +18,7 @@ class DocumentorServiceProvider extends ServiceProvider
     {
         if ($this->app->runningInConsole()) {
             $this->publishes([
-                __DIR__ . '/../config/config.php' => config_path('documentor.php'),
+                __DIR__ . '/config/config.php' => config_path('documentor.php'),
             ], 'config');
         }
     }
