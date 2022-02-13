@@ -14,7 +14,7 @@ class DocumentorBuildCommand extends Command
     /**
      * @var string
      */
-    protected $description = 'Build the documentation for your laravel project in a easy way';
+    protected $description = 'Build the documentation for your laravel project';
 
     /**
      * Execute the console command.
@@ -37,7 +37,7 @@ class DocumentorBuildCommand extends Command
     }
 
     /**
-     * The command that will be executed
+     * The command that will be executed to document the code
      * 
      * @return string
      */
@@ -49,7 +49,7 @@ class DocumentorBuildCommand extends Command
     }
 
     /**
-     * The source folder to document
+     * The source folder to analyze
      * 
      */
     private function source(): string

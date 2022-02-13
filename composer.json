@@ -14,5 +14,12 @@
         "psr-4": {
             "Laravox\\Documentor\\": "src/"
         }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Laravox\\Documentor\\DocumentorServiceProvider"
+            ]
+        }
     }
 }
